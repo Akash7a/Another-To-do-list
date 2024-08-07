@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(4, 103, 91);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+form{
+    width: 50vmin;
+    margin:10px auto;
+    box-shadow: 0 0 10px black;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    text-align: center;
+}
+form input , button{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 30px;
+    outline: none;
+}
+::placeholder{
+    position: relative;
+    left: 15px;
+}
+form input{
+    font-size: 20px;
+}
+form button{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: rgb(33, 32, 32);
+}
+.task_container{
+    background-color: rgb(232, 239, 245);
+    width: 50vmin;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    position: relative;
+}
+.title{
+    font-weight: bold;
+}
+.completed{
+    text-decoration: line-through;
+    color: blue;
+    background-color: rgb(162, 184, 184);
+    padding: 5px ;
+    border-radius: 5px;
+};
+.bi-circle{
+    justify-self: end;
+}
+.control_btn{
+    display: flex;
+    gap: 5px;
+}
+.control_btn i{
+    font-size: 20px;
+};
+.greet_container{
+    background: linear-gradient(150deg,blue,red);
+    position: fixed;
+    top: 10px;
+    width: 50vmin;
+    left: 35%;
+}
